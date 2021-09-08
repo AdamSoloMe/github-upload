@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class TriangleArea {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        Triangle triangle1 = new Triangle();
+        Triangle triangle2 = new Triangle();
+        double User_input=input.nextDouble();
+        double input2=input.nextDouble();
+        double input3=input.nextDouble();
+        double input4=input.nextDouble();
+        triangle1.setBase(User_input);
+        triang
+    le1.setHeight(input2);
+        triangle1.getArea();
+
+        triangle2.setBase(input3);
+        triangle2.setHeight(input4);
+        triangle2.getArea();
+
+
+        // TODO: Determine larger triangle (use getArea())
+        if(triangle1.getArea() >triangle2.getArea()){
+            System.out.println("Triangle with larger area:");
+            // TODO: Output larger triangle's info (use printInfo())
+            triangle1.printInfo();
+        }
+        else if (triangle2.getArea()>triangle1.getArea()){
+            System.out.println("Triangle with larger area:");
+            // TODO: Output larger triangle's info (use printInfo())
+            triangle2.printInfo();
+
+        }
+    }
+}
